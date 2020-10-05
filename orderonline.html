@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orderonline</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+    	html {
+    		min-height: 100%;
+    		background-image: url(pear.jpg); /*replace image.jpg with path to your image*/
+    		background-size: cover;
+    		background-repeat: no-repeat;
+    		background-position: center center;
+    		background-attachment: fixed;
+    	}
+    </style>
+    
+</head>
+
+<form action="/action_page.php">
+	<h2>Order Now</h2>	
+  <fieldset>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Donald"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Duck"><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" value="a@b.com"><br><br>
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" value="Calgary, AB"><br><br>
+  <label for="creditcard">Credit Card #:</label><br>
+  <input type="text" id="creditcard" value="450-587-78695"><br><br>
+  </fieldset>
+</form> 
+
+<form method="post" action="/Tests/Post">  
+    <fieldset>  
+    <legend>Please select your order</legend>  
+    <input type="checkbox" name="favorite_food" value="Garlic Bread" onclick="return ValidatePetSelection();">Garlic Bread<br>  
+    <input type="checkbox" name="favorite_food" value="Chicken Wings" onclick="return ValidatePetSelection();">Chicken Wings<br>  
+    <input type="checkbox" name="favorite_food" value="Calamari" onclick="return ValidatePetSelection();">Calamari<br>
+    <input type="checkbox" name="favorite_food" value="Marinated Olives" onclick="return ValidatePetSelection();">Marinated Olives<br>  
+    <input type="checkbox" name="favorite_food" value="Warm Artichoke Dip" onclick="return ValidatePetSelection();">Warm Artichoke Dip<br>  
+    <input type="checkbox" name="favorite_food" value="STEAK SANDWICH" onclick="return ValidatePetSelection();">STEAK SANDWICH<br>
+    <input type="checkbox" name="favorite_food" value="SMOKED BRISKET SANDWICH" onclick="return ValidatePetSelection();">SMOKED BRISKET SANDWICH<br>  
+    <input type="checkbox" name="favorite_food" value="FRIED CHICKEN SANDWICH" onclick="return ValidatePetSelection();">FRIED CHICKEN SANDWICH<br>  
+    <input type="checkbox" name="favorite_food" value="CHARRED RED SNAPPER" onclick="return ValidatePetSelection();">CHARRED RED SNAPPER<br>
+	<input type="checkbox" name="favorite_food" value="FISH AND CHIPS" onclick="return ValidatePetSelection();">FISH AND CHIPS<br>  
+    <input type="checkbox" name="favorite_food" value="PACIFIC RED SPRING SALMON" onclick="return ValidatePetSelection();">PACIFIC RED SPRING SALMON<br>  
+    <input type="checkbox" name="favorite_food" value="CATCH OF THE DAY" onclick="return ValidatePetSelection();">CATCH OF THE DAY<br>
+    <input type="checkbox" name="favorite_food" value="SCALLOP FETTUCCINE - Half" onclick="return ValidatePetSelection();">SCALLOP FETTUCCINE - Half<br>  
+    <input type="checkbox" name="favorite_food" value="SCALLOP FETTUCCINE - Full" onclick="return ValidatePetSelection();">SCALLOP FETTUCCINE - Full<br>  
+    <input type="checkbox" name="favorite_food" value="RISOTTO CARBONARA - Half" onclick="return ValidatePetSelection();">RISOTTO CARBONARA - Half<br>
+    <input type="checkbox" name="favorite_food" value="RISOTTO CARBONARA - Full" onclick="return ValidatePetSelection();">RISOTTO CARBONARA - Full<br>  
+    <input type="checkbox" name="favorite_food" value="LAMB MEATBALL SPAGHETTI - Half" onclick="return ValidatePetSelection();">LAMB MEATBALL SPAGHETTI - Half<br>  
+    <input type="checkbox" name="favorite_food" value="LAMB MEATBALL SPAGHETTI - Full" onclick="return ValidatePetSelection();">LAMB MEATBALL SPAGHETTI - Full<br>
+    <input type="checkbox" name="favorite_food" value="Fresh Juice" onclick="return ValidatePetSelection();">Fresh Juice<br>  
+    <input type="checkbox" name="favorite_food" value="Cold Drinks" onclick="return ValidatePetSelection();">Cold Drinks<br>
+	<input type="checkbox" name="favorite_food" value="Tea" onclick="return ValidatePetSelection();">Tea<br>
+	<input type="checkbox" name="favorite_food" value="Coffee" onclick="return ValidatePetSelection();">Coffee<br>
+
+    <br>  
+    <button type="button" style="background-color: lightgrey "><a href="thankyou.html">Submit Now</a></button>
+    </fieldset>  
+</form>  
+
+
+</body>
+</html>

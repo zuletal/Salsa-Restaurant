@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsa Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li> <a href="Index-Menu.html" target="_blank">Menu</a></li>
+            <li><a href="#hours">Location/Hours</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="BookTable.html" target="_blank">Reservation</a></li>
+            <li><a href="orderonline.html" target="_blank">Order Online</a></li>
+        </ul>
+    </nav>
+<main id="video " class="maintext">
+
+<video autoplay muted loop id="myVideo">
+    <source src="pan.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<h1 >
+    Salsa    
+</h1>
+<h4>International Cuisine </h4>
+</main>
+
+
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+</script>  
+    
+<div class="section">
+
+   
+    <div>   
+    <ul id="hours" class="hours">
+        <h2>Hours</h2>        
+        <li>
+        Tuesday ----- 9:00am - 10:00 pm  <br> Wednesday ----- 9:00am - 10:00 pm <br> Thursday ----- 9:00am - 10:00 pm <br> Friday ----- 9:00am - 10:00 pm <br> Saturday ----- 9:00am - 12:00 am <br> Sunday ----- 10:00am - 3:00 pm<br> Monday ----- Closed   </li>
+    </ul>
+    </div>
+
+    <div  >
+        <h2>Location</h2>
+        <a href="https://www.google.ca/maps/place/Telus+Sky/@51.0466279,-114.0631328,15z/data=!4m5!3m4!1s0x0:0x9f415b9e965c9900!8m2!3d51.0466279!4d-114.0631328" target="_blank">
+            <img src="Location.JPG" alt="Map Location" width="300" height="200">
+            </a>
+    </div> 
+</div>
+
+
+</body>
+<footer>
+    <hr >
+    <div >
+        <ul id="contact" class="footer">
+            <li>Phone number: 403-403-4034 </li>
+            <li><a href="mailto:salsa@salsa.ca" style="color: black;"> Mail to: salsa@salsa.ca</a></li>
+            <li>Address:  Telus Sky - Roof Floor</li>
+            <!-- <li><a href="mailto:salsa@salsa.ca">Contact</a></li> -->
+            
+        </ul>
+    </div>
+
+</footer>
+</html>

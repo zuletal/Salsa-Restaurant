@@ -1,0 +1,35 @@
+.header img{
+   
+    border-style: solid;
+    border-radius: 100px;
+    background-color: rgb(199, 224, 165);
+}
+body{
+    background-color: khaki;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large; 
+    padding: 20px 100px;
+    border-style: double ;
+    border-collapse: separate;
+    border-width: 100px;
+    border-color: red
+    
+}
+h1{
+    color: rgb(161, 218, 30);
+    background-color: red;
+    text-align: center;
+   
+}
+
+span{
+    
+    float: right;
+    padding-right:200px;
+    }
+
+h4{
+    position: relative;
+    border-bottom: thick black dotted;
+    margin-right: 20px;
+}
